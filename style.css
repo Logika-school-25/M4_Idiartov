@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #d49fcf;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main{
+    display: none;
+}
+
+.question{
+    font-size: 4em;
+}
+
+.ans-row{
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer{
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 4.5em; height: 4.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin: .5em;
+    cursor: pointer;
+    background-color: #f0c9ed;
+    font-size: 18px;
+}
+
+.answer:hover{
+    background: #f4b8f2;
+}
+
+.container_h3{
+    margin-bottom: 10px;
+}
+
+.start-btn{
+    font-size: 30px;
+    padding: .3em;
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 4em;
+    height: 1.5em;
+}
+
+table {
+    display: none;
+    border-collapse: collapse;
+    margin-top: -90px;
+    width: 80%;
+    max-width: 600px;
+}
+td, tr {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+tr {
+    background-color: rgb(218, 174, 202);
+}
+
+.clock {
+    font-size: 2em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #333;
+    font-weight: bold;
+    z-index: 100;
+}
